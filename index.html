@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Privacy Policy for DeliveryPro GO — field sales tracking and customer visit management." />
+  <title>Privacy Policy · DeliveryPro GO</title>
+  <link rel="icon" href="app-icon.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,700&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #0f1b2d;
+      --ink-soft: #3a4a63;
+      --muted: #5c6b82;
+      --line: #d5dde8;
+      --paper: #f7f9fc;
+      --card: #ffffff;
+      --navy: #0f1b2d;
+      --navy-mid: #1a2332;
+      --accent: #3498db;
+      --accent-deep: #22638e;
+      --accent-soft: rgba(52, 152, 219, 0.12);
+      --loc: #1e6b4f;
+      --loc-soft: rgba(30, 107, 79, 0.1);
+      --shadow: 0 18px 50px rgba(15, 27, 45, 0.12);
+      --radius: 18px;
+      --max: 880px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(1200px 500px at 10% -10%, rgba(52, 152, 219, 0.18), transparent 55%),
+        radial-gradient(900px 420px at 100% 0%, rgba(15, 27, 45, 0.08), transparent 50%),
+        linear-gradient(180deg, #eef3f9 0%, var(--paper) 28%, #eef2f7 100%);
+      font-family: "DM Sans", "IBM Plex Sans Arabic", system-ui, sans-serif;
+      line-height: 1.65;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(145deg, var(--navy-mid) 0%, var(--navy) 55%, #16324d 100%);
+      color: #fff;
+      padding: 56px 20px 72px;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto -10% -40% 40%;
+      height: 320px;
+      background: radial-gradient(circle, rgba(52, 152, 219, 0.35), transparent 70%);
+      pointer-events: none;
+    }
+    .hero-inner {
+      position: relative;
+      z-index: 1;
+      max-width: var(--max);
+      margin: 0 auto;
+      display: grid;
+      gap: 22px;
+      justify-items: center;
+      text-align: center;
+    }
+    .logo-wrap {
+      width: 88px;
+      height: 88px;
+      border-radius: 22px;
+      background: #fff;
+      padding: 10px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.28);
+      display: grid;
+      place-items: center;
+    }
+    .logo-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border-radius: 12px;
+    }
+    .brand {
+      font-family: "Source Serif 4", Georgia, serif;
+      font-size: clamp(1.8rem, 4vw, 2.55rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin: 0;
+    }
+    .hero h1 {
+      margin: 0;
+      font-size: clamp(1.15rem, 2.6vw, 1.45rem);
+      font-weight: 600;
+      color: #b8d4f0;
+    }
+    .hero .ar-title {
+      font-family: "IBM Plex Sans Arabic", sans-serif;
+      font-size: clamp(1.05rem, 2.4vw, 1.3rem);
+      color: #d7e8f7;
+      margin: 0;
+    }
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+    .chip {
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      background: rgba(255, 255, 255, 0.08);
+      color: #e8f2fb;
+      border-radius: 999px;
+      padding: 7px 14px;
+      font-size: 0.86rem;
+    }
+
+    .shell {
+      max-width: var(--max);
+      margin: -36px auto 64px;
+      padding: 0 16px;
+      position: relative;
+      z-index: 2;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid rgba(213, 221, 232, 0.9);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: clamp(22px, 4vw, 40px);
+    }
+
+    .lang-switch {
+      display: flex;
+      gap: 8px;
+      justify-content: flex-end;
+      margin-bottom: 18px;
+    }
+    .lang-switch button {
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--ink-soft);
+      border-radius: 999px;
+      padding: 8px 14px;
+      font: inherit;
+      font-weight: 600;
+      font-size: 0.9rem;
+      cursor: pointer;
+    }
+    .lang-switch button.active {
+      background: var(--navy);
+      border-color: var(--navy);
+      color: #fff;
+    }
+
+    .panel[hidden] { display: none !important; }
+
+    .toc {
+      display: grid;
+      gap: 8px;
+      margin: 0 0 28px;
+      padding: 16px;
+      border-radius: 14px;
+      background: linear-gradient(180deg, #f3f7fb, #eef4fa);
+      border: 1px solid var(--line);
+    }
+    .toc strong {
+      font-size: 0.95rem;
+      color: var(--navy);
+    }
+    .toc a {
+      color: var(--accent-deep);
+      text-decoration: none;
+      font-size: 0.92rem;
+    }
+    .toc a:hover { text-decoration: underline; }
+
+    section {
+      margin: 0 0 28px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--line);
+    }
+    section:last-of-type { border-bottom: 0; margin-bottom: 0; padding-bottom: 0; }
+    h2 {
+      margin: 0 0 12px;
+      font-size: 1.2rem;
+      color: var(--navy);
+      letter-spacing: -0.01em;
+    }
+    p, li { color: var(--ink-soft); }
+    ul { padding-inline-start: 1.2rem; margin: 10px 0; }
+    li { margin: 6px 0; }
+
+    .location-callout {
+      margin: 14px 0 0;
+      padding: 18px 18px 16px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, var(--loc-soft), rgba(52, 152, 219, 0.08));
+      border: 1px solid rgba(30, 107, 79, 0.22);
+    }
+    .location-callout h3 {
+      margin: 0 0 8px;
+      color: var(--loc);
+      font-size: 1.05rem;
+    }
+    .location-callout p { margin: 0 0 8px; }
+    .location-callout p:last-child { margin-bottom: 0; }
+
+    .contact {
+      display: grid;
+      gap: 8px;
+      padding: 16px;
+      border-radius: 14px;
+      background: var(--accent-soft);
+      border: 1px solid rgba(52, 152, 219, 0.25);
+    }
+    .contact a { color: var(--accent-deep); font-weight: 600; }
+
+    footer {
+      max-width: var(--max);
+      margin: 0 auto 40px;
+      padding: 0 16px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+
+    [dir="rtl"] .toc { text-align: right; }
+    [dir="rtl"] body, [dir="rtl"] .card {
+      font-family: "IBM Plex Sans Arabic", "DM Sans", sans-serif;
+    }
+
+    @media (max-width: 640px) {
+      .hero { padding: 42px 16px 58px; }
+      .logo-wrap { width: 76px; height: 76px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="logo-wrap">
+        <img src="app-icon.png" alt="DeliveryPro GO logo" width="68" height="68" />
+      </div>
+      <p class="brand">DeliveryPro GO</p>
+      <h1>Privacy Policy</h1>
+      <p class="ar-title">سياسة الخصوصية</p>
+      <div class="meta">
+        <span class="chip">Effective / سارية من: 25 Nov 2026</span>
+        <span class="chip">Package: com.edp.medhat.deliveryprogo</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="shell">
+    <article class="card">
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" id="btnAr" class="active" onclick="showLang('ar')">العربية</button>
+        <button type="button" id="btnEn" onclick="showLang('en')">English</button>
+      </div>
+
+      <!-- ARABIC -->
+      <div id="panel-ar" class="panel" dir="rtl" lang="ar">
+        <nav class="toc" aria-label="المحتويات">
+          <strong>المحتويات</strong>
+          <a href="#ar-who">1. من نحن</a>
+          <a href="#ar-collect">2. البيانات التي نجمعها</a>
+          <a href="#ar-location">3. الموقع الجغرافي (مهم)</a>
+          <a href="#ar-use">4. كيف نستخدم البيانات</a>
+          <a href="#ar-share">5. المشاركة والإفصاح</a>
+          <a href="#ar-retain">6. الاحتفاظ بالبيانات</a>
+          <a href="#ar-security">7. الأمان</a>
+          <a href="#ar-rights">8. حقوقك وخياراتك</a>
+          <a href="#ar-children">9. الأطفال</a>
+          <a href="#ar-changes">10. التغييرات</a>
+          <a href="#ar-contact">11. التواصل</a>
+        </nav>
+
+        <section id="ar-who">
+          <h2>1. من نحن</h2>
+          <p>
+            تطبيق <strong>DeliveryPro GO</strong> هو تطبيق ميداني لمندوبي المبيعات/التوزيع لإدارة زيارات العملاء،
+            المسارات اليومية، العناوين، والمستندات، مع تتبّع ميداني يدعم الإشراف والتشغيل.
+            توضح هذه السياسة كيف نتعامل مع بياناتك عند استخدام التطبيق.
+          </p>
+        </section>
+
+        <section id="ar-collect">
+          <h2>2. البيانات التي نجمعها</h2>
+          <ul>
+            <li><strong>بيانات الحساب:</strong> اسم المستخدم، معرّف المستخدم/المندوب، والجهاز المرتبط بالحساب.</li>
+            <li><strong>بيانات التشغيل الميداني:</strong> زيارات العملاء، نتائج الزيارة، الملاحظات، العناوين، والمستندات المرفوعة عند الحاجة.</li>
+            <li><strong>بيانات الجهاز:</strong> معرّفات تقنية لازمة لتسجيل الجهاز وتشغيل خدمة التتبع والإشعارات.</li>
+            <li><strong>بيانات الموقع:</strong> الموقع الدقيق أثناء ساعات العمل وحسب الصلاحيات الممنوحة (انظر القسم التالي).</li>
+            <li><strong>سجلات تقنية:</strong> أحداث تشغيلية محدودة لتحسين الاستقرار والأمان (مثل انقطاع الخدمة أو أعطال غير متوقعة).</li>
+          </ul>
+        </section>
+
+        <section id="ar-location">
+          <h2>3. الموقع الجغرافي — غرض أساسي وضروري</h2>
+          <div class="location-callout">
+            <h3>لماذا نحتاج الموقع الدقيق والخلفية؟</h3>
+            <p>
+              يطلب DeliveryPro GO إذن <strong>الموقع الدقيق</strong> و<strong>السماح طوال الوقت</strong> (الخلفية)
+              لأن وظيفة التطبيق الأساسية هي تتبّع حركة المندوب الميداني ورسم المسارات ودعم التشغيل اليومي.
+              بدون هذا الإذن لا يمكن تشغيل التطبيق بالشكل المطلوب للعمل.
+            </p>
+            <p><strong>نستخدم الموقع من أجل:</strong></p>
+            <ul>
+              <li>تتبّع حركة المندوب أثناء ساعات العمل لدعم الإنتاجية والإشراف.</li>
+              <li>بناء ومتابعة <strong>مسار اليوم (Today Route)</strong> وترتيب الزيارات.</li>
+              <li>عرض <strong>أقرب العملاء</strong> حسب موقع الجهاز الحالي.</li>
+              <li>دعم الخرائط والتنقّل إلى عنوان العميل.</li>
+              <li>تمكين المشرفين من مراقبة المسارات والتفاعل مع العملاء ميدانيًا.</li>
+              <li>تزويد الإدارة بتحليلات التغطية وأداء الفريق.</li>
+            </ul>
+            <p>
+              قد يستمر جمع الموقع أثناء عمل التطبيق في الخلفية أو عند قفل الجهاز، طالما تم منح إذن
+              «السماح طوال الوقت»، وذلك لاستمرار التتبّع الميداني أثناء ساعات العمل.
+            </p>
+          </div>
+        </section>
+
+        <section id="ar-use">
+          <h2>4. كيف نستخدم البيانات</h2>
+          <ul>
+            <li>تشغيل ميزات الزيارات والمسارات والعناوين والمستندات.</li>
+            <li>التتبّع الميداني والإشراف والتحليلات التشغيلية للمؤسسة المالكة للحساب.</li>
+            <li>تأمين الجلسات، تسجيل الأجهزة، وتحسين الاستقرار.</li>
+            <li>الامتثال للمتطلبات القانونية أو طلبات الجهات المختصة عند اللزوم.</li>
+          </ul>
+        </section>
+
+        <section id="ar-share">
+          <h2>5. المشاركة والإفصاح</h2>
+          <p>
+            لا نبيع بياناتك الشخصية. تُعالَج بيانات التشغيل داخل منظومة المؤسسة التي تدير حسابات المندوبين.
+            قد تُشارك بيانات محدودة مع مزوّدي خدمات تقنية strictly ضرورية (مثل الاستضافة أو البنية السحابية)
+            وفق اتفاقيات حماية مناسبة، أو عند الالتزام بطلب قانوني ملزم.
+          </p>
+        </section>
+
+        <section id="ar-retain">
+          <h2>6. الاحتفاظ بالبيانات</h2>
+          <p>
+            نحتفظ بالبيانات طالما كان الحساب نشطًا وللمدد التشغيلية/القانونية التي تتطلبها المؤسسة.
+            يمكن حذف أو إخفاء بيانات معيّنة بناءً على طلب المؤسسة المالكة للحساب ووفق السياسات الداخلية.
+          </p>
+        </section>
+
+        <section id="ar-security">
+          <h2>7. الأمان</h2>
+          <p>
+            نستخدم وسائل حماية تقنية وتنظيمية معقولة (مثل نقل مشفّر حيث ينطبق، وتقييد الوصول حسب الصلاحيات).
+            مع ذلك، لا توجد وسيلة نقل أو تخزين إلكتروني آمنة بنسبة 100%.
+          </p>
+        </section>
+
+        <section id="ar-rights">
+          <h2>8. حقوقك وخياراتك</h2>
+          <ul>
+            <li>يمكنك مراجعة أذونات الموقع والإشعارات من إعدادات نظام جهازك في أي وقت.</li>
+            <li>سحب إذن الموقع قد يمنع تشغيل التتبّع والمسارات وميزة أقرب العملاء.</li>
+            <li>لطلبات الوصول أو التصحيح أو الحذف المتعلقة بحساب العمل، تواصل عبر مسؤول النظام في مؤسستك أو عبر بيانات التواصل أدناه.</li>
+          </ul>
+        </section>
+
+        <section id="ar-children">
+          <h2>9. الأطفال</h2>
+          <p>التطبيق موجّه للاستخدام المهني من قِبل بالغين ضمن بيئة عمل، وليس موجّهًا للأطفال دون 16 عامًا.</p>
+        </section>
+
+        <section id="ar-changes">
+          <h2>10. التغييرات على هذه السياسة</h2>
+          <p>
+            قد نحدّث هذه الصفحة من وقت لآخر. سيجري تحديث تاريخ السريان أعلاه.
+            استمرار استخدام التطبيق بعد التحديث يعني الاطلاع على النسخة الأحدث.
+          </p>
+        </section>
+
+        <section id="ar-contact">
+          <h2>11. التواصل</h2>
+          <div class="contact">
+            <div><strong>DeliveryPro GO</strong></div>
+            <div>البريد: <a href="mailto:medhat.edp@gmail.com">medhat.edp@gmail.com</a></div>
+            <div>معرّف الحزمة: <code>com.edp.medhat.deliveryprogo</code></div>
+          </div>
+        </section>
+      </div>
+
+      <!-- ENGLISH -->
+      <div id="panel-en" class="panel" dir="ltr" lang="en" hidden>
+        <nav class="toc" aria-label="Contents">
+          <strong>Contents</strong>
+          <a href="#en-who">1. Who we are</a>
+          <a href="#en-collect">2. Data we collect</a>
+          <a href="#en-location">3. Location data (critical)</a>
+          <a href="#en-use">4. How we use data</a>
+          <a href="#en-share">5. Sharing &amp; disclosure</a>
+          <a href="#en-retain">6. Retention</a>
+          <a href="#en-security">7. Security</a>
+          <a href="#en-rights">8. Your choices</a>
+          <a href="#en-children">9. Children</a>
+          <a href="#en-changes">10. Changes</a>
+          <a href="#en-contact">11. Contact</a>
+        </nav>
+
+        <section id="en-who">
+          <h2>1. Who we are</h2>
+          <p>
+            <strong>DeliveryPro GO</strong> is a field application for sales/distribution agents to manage customer visits,
+            daily routes, addresses, and documents, with field tracking that supports supervision and operations.
+            This Privacy Policy explains how we handle information when you use the app.
+          </p>
+        </section>
+
+        <section id="en-collect">
+          <h2>2. Data we collect</h2>
+          <ul>
+            <li><strong>Account data:</strong> username, user/salesman identifiers, and device registration details.</li>
+            <li><strong>Field operations data:</strong> customer visits, visit results, remarks, addresses, and uploaded documents when required.</li>
+            <li><strong>Device data:</strong> technical identifiers needed for device registration, tracking service, and notifications.</li>
+            <li><strong>Location data:</strong> precise location during working use and according to granted permissions (see next section).</li>
+            <li><strong>Technical logs:</strong> limited operational events to improve stability and security.</li>
+          </ul>
+        </section>
+
+        <section id="en-location">
+          <h2>3. Location data — a core and necessary purpose</h2>
+          <div class="location-callout">
+            <h3>Why precise and background location are required</h3>
+            <p>
+              DeliveryPro GO requests <strong>precise location</strong> and <strong>Allow all the time</strong> (background)
+              because continuous field tracking, routing, and nearest-customer discovery are core functions of the product.
+              Without these permissions the app cannot operate as intended for work use.
+            </p>
+            <p><strong>We use location to:</strong></p>
+            <ul>
+              <li>Track field-agent movement during working hours to support productivity and supervision.</li>
+              <li>Build and follow the <strong>Today Route</strong> and visit sequencing.</li>
+              <li>Show <strong>nearest customers</strong> based on the device’s current position.</li>
+              <li>Support maps and navigation to customer addresses.</li>
+              <li>Allow supervisors to monitor routes and on-ground customer interactions.</li>
+              <li>Provide management analytics on coverage and team performance.</li>
+            </ul>
+            <p>
+              Location may continue to be collected while the app is in the background or the device is locked,
+              when “Allow all the time” is granted, so field tracking can continue during working hours.
+            </p>
+          </div>
+        </section>
+
+        <section id="en-use">
+          <h2>4. How we use data</h2>
+          <ul>
+            <li>To operate visits, routes, addresses, and document features.</li>
+            <li>For field tracking, supervision, and operational analytics for the organization that owns the accounts.</li>
+            <li>To secure sessions, register devices, and improve reliability.</li>
+            <li>To comply with legal obligations when required.</li>
+          </ul>
+        </section>
+
+        <section id="en-share">
+          <h2>5. Sharing &amp; disclosure</h2>
+          <p>
+            We do not sell personal data. Operational data is processed within the organization’s DeliveryPro GO environment.
+            Limited data may be processed by essential infrastructure providers (for example hosting) under appropriate safeguards,
+            or disclosed when required by binding law.
+          </p>
+        </section>
+
+        <section id="en-retain">
+          <h2>6. Retention</h2>
+          <p>
+            We retain data while accounts remain active and for the operational/legal periods required by the organization.
+            Specific deletion or anonymization requests are handled through the account-owning organization and internal policy.
+          </p>
+        </section>
+
+        <section id="en-security">
+          <h2>7. Security</h2>
+          <p>
+            We apply reasonable technical and organizational measures (including encrypted transport where applicable and role-based access).
+            No method of electronic transmission or storage is 100% secure.
+          </p>
+        </section>
+
+        <section id="en-rights">
+          <h2>8. Your choices</h2>
+          <ul>
+            <li>You can review location and notification permissions in your device settings at any time.</li>
+            <li>Withdrawing location permission may disable tracking, routing, and nearest-customer features.</li>
+            <li>For access, correction, or deletion requests related to a work account, contact your organization admin or the contact below.</li>
+          </ul>
+        </section>
+
+        <section id="en-children">
+          <h2>9. Children</h2>
+          <p>The app is intended for professional use by adults in a workplace setting and is not directed to children under 16.</p>
+        </section>
+
+        <section id="en-changes">
+          <h2>10. Changes</h2>
+          <p>
+            We may update this Privacy Policy from time to time. The effective date above will be revised accordingly.
+            Continued use of the app after an update means you are viewing the latest version.
+          </p>
+        </section>
+
+        <section id="en-contact">
+          <h2>11. Contact</h2>
+          <div class="contact">
+            <div><strong>DeliveryPro GO</strong></div>
+            <div>Email: <a href="mailto:medhat.edp@gmail.com">medhat.edp@gmail.com</a></div>
+            <div>Package: <code>com.edp.medhat.deliveryprogo</code></div>
+          </div>
+        </section>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    © 2026 DeliveryPro GO · Privacy Policy · com.edp.medhat.deliveryprogo
+  </footer>
+
+  <script>
+    function showLang(lang) {
+      var ar = document.getElementById('panel-ar');
+      var en = document.getElementById('panel-en');
+      var btnAr = document.getElementById('btnAr');
+      var btnEn = document.getElementById('btnEn');
+      var isAr = lang === 'ar';
+      ar.hidden = !isAr;
+      en.hidden = isAr;
+      btnAr.classList.toggle('active', isAr);
+      btnEn.classList.toggle('active', !isAr);
+      document.documentElement.lang = isAr ? 'ar' : 'en';
+    }
+  </script>
+</body>
+</html>
